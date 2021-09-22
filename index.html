@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de media</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Media</h1>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <td>Numero</td>
+                    <td>Peso</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" placeholder="Insira um numero" class="numero"></td>
+                    <td><input type="text" placeholder="Insira o peso" class="peso"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Insira um numero" class="numero"></td>
+                    <td><input type="text" placeholder="Insira o peso" class="peso"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><span id="displayMedia">A media vai aparecer aqui</span></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Adicionar mais um fator" id="mais-um"></td>
+                    <td><input type="button" value="Deletar ultimo fator" id="menos-um"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="calcularMedia"><input type="button" value="Calcular Media" id="calcular-media"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <script src="js/adicionarFator.js"></script>
+    <script src="js/deletarFator.js"></script>
+    <script src="js/calcularMedia.js"></script>
+</body>
+</html>
