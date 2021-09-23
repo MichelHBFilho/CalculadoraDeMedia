@@ -7,6 +7,11 @@
     <title>Calculadora de media</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        table {
+            min-width: 30vw;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,17 +23,14 @@
             <thead>
                 <tr>
                     <td>Numero</td>
-                    <td>Peso</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td><input type="text" placeholder="Insira um numero" class="numero"></td>
-                    <td><input type="text" placeholder="Insira o peso" class="peso"></td>
                 </tr>
                 <tr>
                     <td><input type="text" placeholder="Insira um numero" class="numero"></td>
-                    <td><input type="text" placeholder="Insira o peso" class="peso"></td>
                 </tr>
             </tbody>
             <tfoot>
@@ -37,18 +39,22 @@
                 </tr>
                 <tr>
                     <td><input type="button" value="Adicionar mais um fator" id="mais-um"></td>
+                </tr>
+                <tr>
                     <td><input type="button" value="Deletar ultimo fator" id="menos-um"></td>
                 </tr>
                 <tr>
                     <td id="calcularMedia"><input type="button" value="Calcular Media" id="calcular-media"></td>
-                    <td id="trocarTipoDeMedia"><a href="./aritimetica.html"><input type="button" value="Trocar para media Aritimetica" id="calcular-media"></a></td>
+                </tr>
+                <tr>
+                    <td id="trocarTipoDeMedia"><a href="./index.html"><input type="button" value="Trocar para media escolar" id="calcular-media"></a></td>
                 </tr>
             </tfoot>
         </table>
     </main>
 
-    <script src="js/adicionarFator.js"></script>
+    <script src="js/adicionarFatorAri.js"></script>
     <script src="js/deletarFator.js"></script>
-    <script src="js/calcularMedia.js"></script>
+    <script src="js/calcularMediaAri.js"></script>
 </body>
 </html>

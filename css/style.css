@@ -89,7 +89,3 @@ tfoot input:hover {
     color: #fff;
     transition-duration: 0.5s;
 }
-
-#calcularMedia > input {
-    width: 50%;
-}
